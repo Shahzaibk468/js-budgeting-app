@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budgeting App</title>
+       <link rel="stylesheet" href="./style.css">
+     
+</head>
+<body>
+    <h1 id="heading">Budgeting App</h1>
+    <div class="firstContainer">
+    <label for="budget">Set Budget:</label> <br> <br>
+    <input type="number" id="budget"  placeholder="Enter Your Budget"/> <br> <br>
+    <button onclick="setBudget()">Set Budget</button>
+    <br />
+</div>
+<div class="secondContainer">
+    <h3>Add Your Expenses</h3>
+    <p class="textfields"> <label for="date" >Choose Date:</label></p>
+    <input type="date" id="date" class="fields" />
+    <br />
+
+    <p class="textfields"> <label for="description">Description:</label></p>
+    <input type="text" id="description" class="fields" />
+    <br />
+
+    <p class="textfields"> <label for="category">Category:</label></p>
+    <select name="" class="fields">
+        <option value="option1">Food</option>
+        <option value="option2">Groceries</option>
+        <option value="option3">Transport</option>
+        <option value="option4">Shopping</option>
+        <option value="option5">Utility Bills</option>
+        <option value="option6">Others</option>
+    </select>
+
+    <br />
+
+    <p class="textfields"> <label for="expense" >Expense Amount:</label></p>
+    <input type="number" id="expense" class="fields" />
+    <br />
+
+    <button onclick="addExpense()">Add Expense</button>
+</div>
+    <div class="fourthContainer">
+    <table id="expenseTable">
+        <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Expense Amount</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+</div>
+<div class="thirdContainer">
+    <h2>Overview Details:</h2>
+    <h3>Total Budget: <span id="totalBudget">0</span></h3>
+    <h3>Total Expense: <span id="totalExpense">0</span></h3>
+    <h3>Remaining Balance: <span id="remainingBalance">0</span></h3>
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>

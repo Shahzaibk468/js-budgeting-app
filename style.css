@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+#expenseTable th { 
+    background-color:	#808080;
+
+}
+.firstContainer {
+    background-color: #808080;
+    width: 203px;
+    height: 136px;
+    text-align: center;
+    padding-top: 24px;
+    border-radius: 1px 68px;
+    padding-left: 20px;
+    margin-left: 88px;
+    margin-top: 39px;
+    z-index: 0;
+
+}
+
+.secondContainer {
+    /* display: inline-grid; */
+    padding-left: -115px;
+    text-align: center;
+    z-index: 0;
+    margin-top: -196px;
+    background-color: #808080;
+    width: 250px;
+    margin-left: 549px;
+    border-radius: 16px;
+}
+#heading {
+    text-align: center;
+    font-size: 54px;
+}
+.fields {
+    width: 150px;
+}
+.thirdContainer {
+    width: 236px;
+    margin-left: 97px;
+    margin-top: -215px;
+}
+.fourthContainer {
+    margin-left: 468px;
+    margin-top: 56px;
+}
